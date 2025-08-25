@@ -1,0 +1,36 @@
+files:
+  - time: 1691287942869.yml
+    name: iKuuu_V2.yaml
+    url: https://api.sub-300.club/link/AT69UZrQGbgG0qVt?clash=3&extend=1
+    selected:
+      - name: GLOBAL
+        now: 🇭🇰 香港S04 | IEPL
+      - name: 🔰 选择节点
+        now: 🇭🇰 香港S03 | IEPL
+      - name: 🌏 爱奇艺&哔哩哔哩
+        now: DIRECT
+      - name: 📺 动画疯
+        now: 🔰 选择节点
+      - name: 🎮 Steam 登录/下载
+        now: DIRECT
+      - name: 🎮 Steam 商店/社区
+        now: 🔰 选择节点
+      - name: 🌩️ Cloudflare
+        now: 🔰 选择节点
+      - name: ☁️ OneDrive
+        now: 🔰 选择节点
+      - name: 🇨🇳 国内网站
+        now: DIRECT
+      - name: 🛑 拦截广告
+        now: REJECT
+      - name: 🐟 漏网之鱼
+        now: 🔰 选择节点
+    interval: 6
+    subInfo:
+      upload: 273668392
+      download: 6672417000
+      total: 322122547200
+      expire: 1773200949
+    homeWeb: https://ikuuu.de
+    mode: rule
+index: 0
