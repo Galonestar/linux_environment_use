@@ -1,0 +1,93 @@
+
+
+      
+{
+
+    //  自动补全、跳转等intelligence 配置，基于 clangd配置，适合大型项目。
+    "clangd.arguments": [
+        "--background-index=false", // 改为false，明显加快outline的加载
+        "--pch-storage=memory", // 添加该选项，明显加快outline的加载
+        "--log=error",
+        "--header-insertion=never",
+        "--clang-tidy",
+        "--cross-file-rename=true",
+        // -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+        "--compile-commands-dir=${workspaceFolder}/zark2.0/apps/e2e_pnc/build"
+    ],
+    "clangd.path": "/home/nvidia/Zark2.0/clangd_19.1.2/bin/clangd",
+    "clangd.syncFileEvents": true,
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "C_Cpp.autocomplete": "Disabled",
+    "files.maxMemoryForLargeFilesMB": 4096, // 增加内存对打文件的支持
+
+      
+
+
+    "files.exclude": { // 排除文件和文件夹,使它们在资源管理器中不可见
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.metadata": true,
+        // "**/.cache": true,
+        //"**/build": true,
+        "**/Install": true,
+        "**/build_test": true,
+        "**/build_debug": true,
+        "**/build_release": true,
+        "**/build_release_g": true,
+        "**/.cache": true,
+        "**/.clang-format": true,
+        "**/archiver/script/deepintemp/**": true,
+        "**/build_debug_socket": true
+    },
+     
+    "search.exclude": { // 排除文件和文件夹,使它们不在搜索结果中不可见
+        // "**/node_modules": true,
+        // "**/bower_components": true,
+        "**/.git": true,
+        "**/build": true,
+        "**/build_arm": true,
+        "**/build_cross": true,
+        "**/build_debug": true,
+        "**/build_debug_socket": true
+    },
+    "files.watcherExclude": { // 排除文件和文件夹,使它们不被文件监视器监控,从而减少性能开销,赞
+        // "**/.git/objects/**": true,
+        // "**/.git/subtree-cache/**": true,
+        // "**/node_modules/**": true,
+        "**/build/**": true,
+        "**/build_arm/**": true,
+        "**/build_cross/**": true,
+        "**/build_debug/**": true,
+        "**/build_debug_socket/**": true,
+        "**/.metadata/**": true,
+    },
+    // "clangd.arguments": [
+    //     "--background-index",
+    //     "--log=error",
+    //     "--header-insertion=never",
+    //     "--clang-tidy",
+    //     "--cross-file-rename=true"
+    // ],
+    // "clangd.path": "/usr/bin/clangd-11",
+    // "clangd.syncFileEvents": true,
+    // "C_Cpp.intelliSenseEngine": "Disabled",
+    // "C_Cpp.autocomplete": "Disabled",
+    "files.associations": {
+        "iostream": "cpp",
+        "filesystem": "cpp",
+        "chrono": "cpp"
+    },
+    "files.autoSaveDelay": 1000,
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+
+    "markdown.preview.fontSize": 18
+}
+
+    
+
+
